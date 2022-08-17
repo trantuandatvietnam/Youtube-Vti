@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@layer base {
+    // VARIABLES
+    :root {
+        // SIZES
+        --header-height: 56px;
+        // COLORS
+    }
+    * {
+        box-sizing: inherit;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+
+    body {
+        font-size: 1.4rem;
+        font-family: 'Roboto', sans-serif;
+        box-sizing: border-box;
+        background: #f9f9f9;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: center;
+    }
+}
+
+@layer utilities {
+    // .header-height {
+    //     height: $header-height;
+    // }
+}
+
+@layer components {
+    .wrapper {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .content {
+        width: 100%;
+        max-width: 1504px;
+        margin: 0 auto;
+    }
+}
