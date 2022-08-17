@@ -1,9 +1,5 @@
 function App() {
-  return (
-    <div className="text-red-500">
-      Youtube
-    </div>
-  );
+  return <div className="text-red-500">Youtube</div>;
 }
 
 export default App;
