@@ -25,17 +25,12 @@ const Header = () => {
                         </span>
                     </div>
                 </div>
-                <div className="flex items-center">
-                    <Search />
-                    <div className="p-[8px]">
-                        <MicIcon />
-                    </div>
-                </div>
+                <Search />
                 <div className="flex items-center gap-x-[8px]">
-                    <div className="p-[8px] cursor-pointer">
+                    <div className="p-[8px] cursor-pointer hidden md:block">
                         <UploadIcon />
                     </div>
-                    <div className="p-[8px] cursor-pointer">
+                    <div className="p-[8px] cursor-pointer hidden md:block">
                         <NotifyIcon />
                     </div>
                     <div className="p-[8px] cursor-pointer">

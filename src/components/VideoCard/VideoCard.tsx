@@ -8,7 +8,7 @@ function VideoCard({ imgURL, title, playlists, videoId }: IVideoCard) {
             to={`/watch?v=${videoId}`}
             className="px-[8px] py-[4px] cursor-pointer block"
         >
-            <div className="w-[360px] mb-[12px]">
+            <div className="mb-[12px]">
                 <img src={imgURL} alt="" />
             </div>
             <div className="flex items-start gap-x-4">
@@ -16,11 +16,13 @@ function VideoCard({ imgURL, title, playlists, videoId }: IVideoCard) {
                     <img src={avatar} alt="" />
                 </div>
                 <div className="">
-                    <h3 className="text-[1.6rem] leading-[2.2rem] font-semibold">
+                    <h3 className="text-[1.6rem] leading-[2.2rem] font-semibold two-line-clamp">
                         {title}
                     </h3>
                     <div className="flex flex-col text-[1.4rem] text-[#606060]">
-                        <span>Playlist: {playlists}</span>
+                        <span className="one-line-clamp">
+                            Playlist: {playlists}
+                        </span>
                         <span>491 N lượt xem</span>
                     </div>
                 </div>

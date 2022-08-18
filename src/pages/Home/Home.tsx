@@ -16,7 +16,7 @@ function Home() {
     }, []);
 
     return (
-        <div className="pl-[240px] pt-[56px] w-full">
+        <div className="pl-0 md:pl-[160px] lg:pl-[240px] pt-[56px] w-full">
             <VideoList videoList={videoList} />
         </div>
     );

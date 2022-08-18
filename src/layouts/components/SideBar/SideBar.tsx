@@ -4,7 +4,7 @@ import { HomeIcon } from '../../../components/Icons';
 
 const SideBar = () => {
     return (
-        <div className="w-[240px] bg-white h-screen fixed left-0 top-[56px]">
+        <div className="hidden md:block md:w-[160px] lg:w-[240px] bg-white h-screen fixed left-0 top-[56px]">
             <div className="mt-[24px]">
                 <NavLink
                     to="/"
@@ -15,7 +15,7 @@ const SideBar = () => {
                     }
                 >
                     <HomeIcon />
-                    <span>Trang chủ</span>
+                    <span className="hidden md:block">Trang chủ</span>
                 </NavLink>
             </div>
         </div>
