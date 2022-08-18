@@ -6,18 +6,9 @@ import { MicIcon, SearchIcon } from '../../../components/Icons';
 const Seach = () => {
     // https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=f8&key=[YOUR_API_KEY]
     const [searchValues, setSearchValues] = useState<string>('');
-    // let timer = useRef<any>(null);
     const handleChangeValues = (e: ChangeEvent<HTMLInputElement>) => {
         const currentValues = e.target.value;
         setSearchValues(currentValues);
-
-        // timer.current = setTimeout(() => {
-        //     if (timer.current) {
-        //         clearTimeout(timer.current);
-        //         return;
-        //     }
-        //     console.log(123);
-        // }, 300);
     };
     return (
         <div className="hidden md:flex items-center">
@@ -36,11 +27,11 @@ const Seach = () => {
                         alt="keyboard"
                     />
                 </div>
-                <Button className="bg-[#f8f8f8] h-full w-[64px] border-l flex items-center justify-center">
+                <Button className="bg-[#f8f8f8] h-full w-[64px] border-l flex items-center justify-center cursor-pointer">
                     <SearchIcon />
                 </Button>
             </div>
-            <div className="p-[8px]">
+            <div className="p-[8px] cursor-pointer">
                 <MicIcon />
             </div>
         </div>

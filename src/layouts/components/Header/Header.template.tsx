@@ -13,7 +13,7 @@ const Header = () => {
         <div className="bg-white fixed top-0 w-full">
             <div className="h-header wrapper flex items-center justify-between">
                 <div className="flex items-center">
-                    <div className="p-[8px]">
+                    <div className="p-[8px] cursor-pointer">
                         <MenuIcon />
                     </div>
                     <div className="py-[18px] pr-[14px] pl-[16px] relative">
